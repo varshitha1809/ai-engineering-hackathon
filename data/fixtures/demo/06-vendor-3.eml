@@ -1,0 +1,19 @@
+From: Northwind Supplies <billing@northwind-supplies.example>
+To: finance@phishdna-demo.local
+Subject: Banking update
+Date: Fri, 09 Oct 2026 13:30:00 +0000
+Message-ID: <demo-06-vendor-3@northwind-supplies.example>
+Reply-To: accounts.northwind@remit-desk.test
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello,
+
+We have updated our banking information. Please use the new account for upcom=
+ing invoices.
+
+Account number: 6612 0091 7734
+Routing: 021000089
+
+Northwind Billing

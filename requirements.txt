@@ -1,0 +1,16 @@
+# PHISHDNA AI backend + ML pipeline (versions verified in this build, Python 3.11.9)
+fastapi==0.116.1
+starlette==0.47.3
+uvicorn==0.35.0
+pydantic==2.11.7
+python-multipart==0.0.20
+scikit-learn==1.9.1
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.2
+pyarrow==26.0.0
+joblib==1.6.0
+beautifulsoup4==4.14.3
+requests==2.32.5
+httpx==0.28.1
+pytest==9.1.1

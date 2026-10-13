@@ -1,0 +1,858 @@
+{
+  "run_id": "eval-20261013T034130Z-8b771f",
+  "created_at": "2026-10-13T03:41:30.867656+00:00",
+  "model_version": "textclf-linear_svm-e1a96befb4",
+  "training_run_id": "train-20261013T033521Z-9d474c",
+  "artifact_sha256": "e1a96befb499d82d1cb92c891967160bbea1bd9eb00b8f659f2ba7ba467317dd",
+  "decision_threshold": 0.521101,
+  "evaluation_sets": {
+    "meajor_test": {
+      "n": 14440,
+      "threshold": 0.521101,
+      "precision": 0.983,
+      "recall": 0.9846,
+      "f1": 0.9838,
+      "fpr": 0.0129,
+      "accuracy": 0.986,
+      "confusion_matrix": {
+        "tn": 8098,
+        "fp": 106,
+        "fn": 96,
+        "tp": 6140
+      },
+      "per_class": {
+        "benign": {
+          "precision": 0.9883,
+          "recall": 0.9871,
+          "f1": 0.9877,
+          "support": 8204
+        },
+        "malicious": {
+          "precision": 0.983,
+          "recall": 0.9846,
+          "f1": 0.9838,
+          "support": 6236
+        }
+      },
+      "pr_auc": 0.9982,
+      "roc_auc": 0.9986,
+      "brier": 0.0106,
+      "ece_10bin": 0.0016,
+      "reliability": [
+        {
+          "bin": "0.0-0.1",
+          "n": 7927,
+          "mean_score": 0.0038,
+          "observed_positive_rate": 0.0034
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 108,
+          "mean_score": 0.1453,
+          "observed_positive_rate": 0.1296
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 61,
+          "mean_score": 0.2513,
+          "observed_positive_rate": 0.2295
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 45,
+          "mean_score": 0.3478,
+          "observed_positive_rate": 0.3111
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 45,
+          "mean_score": 0.4455,
+          "observed_positive_rate": 0.5333
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 41,
+          "mean_score": 0.553,
+          "observed_positive_rate": 0.4878
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 51,
+          "mean_score": 0.65,
+          "observed_positive_rate": 0.5686
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 75,
+          "mean_score": 0.7528,
+          "observed_positive_rate": 0.7333
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 131,
+          "mean_score": 0.859,
+          "observed_positive_rate": 0.8626
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 5956,
+          "mean_score": 0.9945,
+          "observed_positive_rate": 0.995
+        }
+      ],
+      "batch_seconds": 13.39,
+      "per_source": {
+        "trec5": {
+          "n": 6488,
+          "threshold": 0.521101,
+          "precision": 0.9728,
+          "recall": 0.9836,
+          "f1": 0.9782,
+          "fpr": 0.0195,
+          "accuracy": 0.9818,
+          "confusion_matrix": {
+            "tn": 3725,
+            "fp": 74,
+            "fn": 44,
+            "tp": 2645
+          },
+          "per_class": {
+            "benign": {
+              "precision": 0.9883,
+              "recall": 0.9805,
+              "f1": 0.9844,
+              "support": 3799
+            },
+            "malicious": {
+              "precision": 0.9728,
+              "recall": 0.9836,
+              "f1": 0.9782,
+              "support": 2689
+            }
+          },
+          "pr_auc": 0.997,
+          "roc_auc": 0.9978,
+          "brier": 0.0137,
+          "ece_10bin": 0.007
+        },
+        "trec6": {
+          "n": 2077,
+          "threshold": 0.521101,
+          "precision": 0.9662,
+          "recall": 0.975,
+          "f1": 0.9706,
+          "fpr": 0.0092,
+          "accuracy": 0.9875,
+          "confusion_matrix": {
+            "tn": 1622,
+            "fp": 15,
+            "fn": 11,
+            "tp": 429
+          },
+          "per_class": {
+            "benign": {
+              "precision": 0.9933,
+              "recall": 0.9908,
+              "f1": 0.992,
+              "support": 1637
+            },
+            "malicious": {
+              "precision": 0.9662,
+              "recall": 0.975,
+              "f1": 0.9706,
+              "support": 440
+            }
+          },
+          "pr_auc": 0.9957,
+          "roc_auc": 0.9986,
+          "brier": 0.0096,
+          "ece_10bin": 0.006
+        },
+        "trec7": {
+          "n": 5875,
+          "threshold": 0.521101,
+          "precision": 0.9945,
+          "recall": 0.9868,
+          "f1": 0.9906,
+          "fpr": 0.0061,
+          "accuracy": 0.9901,
+          "confusion_matrix": {
+            "tn": 2751,
+            "fp": 17,
+            "fn": 41,
+            "tp": 3066
+          },
+          "per_class": {
+            "benign": {
+              "precision": 0.9853,
+              "recall": 0.9939,
+              "f1": 0.9896,
+              "support": 2768
+            },
+            "malicious": {
+              "precision": 0.9945,
+              "recall": 0.9868,
+              "f1": 0.9906,
+              "support": 3107
+            }
+          },
+          "pr_auc": 0.9995,
+          "roc_auc": 0.9994,
+          "brier": 0.0075,
+          "ece_10bin": 0.0083
+        }
+      }
+    },
+    "nazario_5_test": {
+      "n": 419,
+      "threshold": 0.521101,
+      "precision": 0.9596,
+      "recall": 0.9907,
+      "f1": 0.9749,
+      "fpr": 0.0443,
+      "accuracy": 0.9737,
+      "confusion_matrix": {
+        "tn": 194,
+        "fp": 9,
+        "fn": 2,
+        "tp": 214
+      },
+      "per_class": {
+        "benign": {
+          "precision": 0.9898,
+          "recall": 0.9557,
+          "f1": 0.9724,
+          "support": 203
+        },
+        "malicious": {
+          "precision": 0.9596,
+          "recall": 0.9907,
+          "f1": 0.9749,
+          "support": 216
+        }
+      },
+      "pr_auc": 0.9905,
+      "roc_auc": 0.9922,
+      "brier": 0.0238,
+      "ece_10bin": 0.0198,
+      "reliability": [
+        {
+          "bin": "0.0-0.1",
+          "n": 188,
+          "mean_score": 0.0054,
+          "observed_positive_rate": 0.0053
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 2,
+          "mean_score": 0.145,
+          "observed_positive_rate": 0.0
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 4,
+          "mean_score": 0.2524,
+          "observed_positive_rate": 0.0
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 2,
+          "mean_score": 0.424,
+          "observed_positive_rate": 0.5
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 1,
+          "mean_score": 0.5852,
+          "observed_positive_rate": 1.0
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 5,
+          "mean_score": 0.675,
+          "observed_positive_rate": 0.8
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 4,
+          "mean_score": 0.7561,
+          "observed_positive_rate": 1.0
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 11,
+          "mean_score": 0.8582,
+          "observed_positive_rate": 0.6364
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 202,
+          "mean_score": 0.992,
+          "observed_positive_rate": 0.9802
+        }
+      ],
+      "batch_seconds": 0.46
+    },
+    "combined_test": {
+      "n": 14859,
+      "threshold": 0.521101,
+      "precision": 0.9822,
+      "recall": 0.9848,
+      "f1": 0.9835,
+      "fpr": 0.0137,
+      "accuracy": 0.9857,
+      "confusion_matrix": {
+        "tn": 8292,
+        "fp": 115,
+        "fn": 98,
+        "tp": 6354
+      },
+      "per_class": {
+        "benign": {
+          "precision": 0.9883,
+          "recall": 0.9863,
+          "f1": 0.9873,
+          "support": 8407
+        },
+        "malicious": {
+          "precision": 0.9822,
+          "recall": 0.9848,
+          "f1": 0.9835,
+          "support": 6452
+        }
+      },
+      "pr_auc": 0.998,
+      "roc_auc": 0.9985,
+      "brier": 0.0109,
+      "ece_10bin": 0.0015,
+      "reliability": [
+        {
+          "bin": "0.0-0.1",
+          "n": 8115,
+          "mean_score": 0.0039,
+          "observed_positive_rate": 0.0035
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 110,
+          "mean_score": 0.1452,
+          "observed_positive_rate": 0.1273
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 65,
+          "mean_score": 0.2514,
+          "observed_positive_rate": 0.2154
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 45,
+          "mean_score": 0.3478,
+          "observed_positive_rate": 0.3111
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 47,
+          "mean_score": 0.4445,
+          "observed_positive_rate": 0.5319
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 42,
+          "mean_score": 0.5537,
+          "observed_positive_rate": 0.5
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 56,
+          "mean_score": 0.6523,
+          "observed_positive_rate": 0.5893
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 79,
+          "mean_score": 0.753,
+          "observed_positive_rate": 0.7468
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 142,
+          "mean_score": 0.8589,
+          "observed_positive_rate": 0.8451
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 6158,
+          "mean_score": 0.9944,
+          "observed_positive_rate": 0.9945
+        }
+      ],
+      "batch_seconds": 12.99
+    },
+    "spamassassin_external": {
+      "n": 5538,
+      "threshold": 0.521101,
+      "precision": 0.8733,
+      "recall": 0.8868,
+      "f1": 0.88,
+      "fpr": 0.0563,
+      "accuracy": 0.9263,
+      "confusion_matrix": {
+        "tn": 3634,
+        "fp": 217,
+        "fn": 191,
+        "tp": 1496
+      },
+      "per_class": {
+        "benign": {
+          "precision": 0.9501,
+          "recall": 0.9437,
+          "f1": 0.9468,
+          "support": 3851
+        },
+        "malicious": {
+          "precision": 0.8733,
+          "recall": 0.8868,
+          "f1": 0.88,
+          "support": 1687
+        }
+      },
+      "pr_auc": 0.9451,
+      "roc_auc": 0.9734,
+      "brier": 0.0563,
+      "ece_10bin": 0.0176,
+      "reliability": [
+        {
+          "bin": "0.0-0.1",
+          "n": 3192,
+          "mean_score": 0.0131,
+          "observed_positive_rate": 0.0135
+        },
+        {
+          "bin": "0.1-0.2",
+          "n": 245,
+          "mean_score": 0.1409,
+          "observed_positive_rate": 0.1224
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 135,
+          "mean_score": 0.2512,
+          "observed_positive_rate": 0.1778
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 125,
+          "mean_score": 0.349,
+          "observed_positive_rate": 0.304
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 109,
+          "mean_score": 0.4504,
+          "observed_positive_rate": 0.422
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 84,
+          "mean_score": 0.5506,
+          "observed_positive_rate": 0.5714
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 106,
+          "mean_score": 0.6481,
+          "observed_positive_rate": 0.6038
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 135,
+          "mean_score": 0.7526,
+          "observed_positive_rate": 0.6815
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 172,
+          "mean_score": 0.8536,
+          "observed_positive_rate": 0.7791
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 1235,
+          "mean_score": 0.9815,
+          "observed_positive_rate": 0.9457
+        }
+      ],
+      "batch_seconds": 6.51
+    }
+  },
+  "notes": [
+    "Test splits were not used for model selection, threshold tuning or calibration.",
+    "MeAJOR label 1 in this file derives from TREC spam labels; MeAJOR metrics measure malicious/unsolicited detection broadly, Nazario_5 metrics measure phishing vs legitimate.",
+    "SpamAssassin is an unseen external corpus with spam/ham labels; its 'recall' is spam recall, not phishing recall."
+  ],
+  "latency_ms_single_email": {
+    "n": 300,
+    "p50": 2.29,
+    "p95": 4.24
+  },
+  "failure_samples": [
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.001,
+      "kind": "false_negative",
+      "excerpt": "delete if you are not please help us with our market research class! we would appreciate your input into a market research survey that we are conducting as part of a class at the at . thank you very much for your help. go to: urltoken please click this link now (or go online and retype the address i"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0012,
+      "kind": "false_negative",
+      "excerpt": "re: helloj here is the information we talked about last weekm sorry this link so long to sendo kpress here for more infof if you have any questions please let us knowi thank youe said on that people have been confirmed missing in the asian tsunami among the reported cases. co-president is trying to "
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0016,
+      "kind": "false_negative",
+      "excerpt": "happy thanksgiving i just wanted to sincerely wish all of you a very happy and safe thanksgiving with your families. thanks to all of you for helping me build my business this year. phonetoken , urltoken learn more about me at: urltoken"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0018,
+      "kind": "false_negative",
+      "excerpt": "your life insurance co does not want you to know this i actually thought it was a really interesting idea, we'd hate evil lol ;-) i'll kind of neat, huh? do you have any visual ideas thursday, , , you wrote: i think it's, you know, i think it's a really bad context and 's like you > shouldn't have d"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0021,
+      "kind": "false_negative",
+      "excerpt": "test"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0024,
+      "kind": "false_negative",
+      "excerpt": "academic globalization project and info-cybernethics 2007 please consider to contribute and participate in an academic globalization project: call for abstracts/articles and participation. urltoken and/or in info-cybernethics 2007: call for abstracts/articles and participation: urltoken deadlines fo"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0025,
+      "kind": "false_negative",
+      "excerpt": "sgdg hey, what's up. here's the link that you requested. i hope it's what you needed. gotta run for now, i'll be back on monday, let me know if it helps. catch you later. complete your order here."
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0053,
+      "kind": "false_negative",
+      "excerpt": "you know about the 5'th don't you? would you be keen for dinner sometime this weekend:-) little longer. the world has been flattened (with some help transmitting them down restaurants in the still, projected, and lot of drive innovation.] to have [a movement] there is no own recipe for cola-building"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.006,
+      "kind": "false_negative",
+      "excerpt": "- report defense dominates, longhorn comedy continues. by what more can say this defense? it has gotten to the point where onlookers are disappointed when the defense gives up a first down. and when someone drives the field for a , people are almost amazed. \"we played okay against . i think we can p"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0065,
+      "kind": "false_negative",
+      "excerpt": "(no subject) re: student packets welcome to winter term student packet preparations! first: fax ( phonetoken ) or email ( emailtoken ) just your bibliography to so we can get your copyright clearances done. the earlier the better. as usual, we will work with you to get the packets set up the way you"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0088,
+      "kind": "false_negative",
+      "excerpt": "we need your help! howdy! we need your help! earlier this week, a letter was sent to you asking you to renew your support for in . because of the time sensitivity of this request, we wanted to make sure you received this message via e-mail as well. this year is almost over and the association is jus"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0089,
+      "kind": "false_negative",
+      "excerpt": "along with the to sign the kyoto protocol, fearing it would damage their economies while not requiring developing countries such as and to reduce emissions. but many discriminatory barriers exist in practice. so the relevant rules on working time, minimum wages, holidays and the right to strike, wil"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0106,
+      "kind": "false_negative",
+      "excerpt": "how to access script objects the eval, invokemethod, and invokefunction methods always return an object instance. get notes for . in this example, the criteria are hardcoded. likewise, you're seeing greater energy efficiency, thereby reducing costs. 6) notice that the list of script-engine factories"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0137,
+      "kind": "false_negative",
+      "excerpt": "isi economy, money and markets dear , good morning, i hope you were out shopping this weekend; the sales even got me out. we will have a special of out retail survey this afternoon to see how this weekend went. hopefully the relative strength by will be . the feeling here is holiday sales and 4q gdp"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0165,
+      "kind": "false_negative",
+      "excerpt": "bowlegged to support customers' needs for supporting an soa on a mainframe, is introducing a new version of on . to support customers' needs for supporting an soa on a mainframe, is introducing a new version of on . but when the public dialogue shifted to the unequal treatment of rich and poor peopl"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0165,
+      "kind": "false_negative",
+      "excerpt": "but it seems to me that's dangerous. email to , and it's hard to follow when so much is sealed."
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0236,
+      "kind": "false_negative",
+      "excerpt": "re: [html] potlaceni automatickeho textu u elementu example wrote: je nejaky parametr umoznujici nejak potlacit automaticky generovana navesti u kazdeho elementu example? staci mi tam pouze svuj nadpis (priklad toho a toho, nikoliv priklad 1: to a to). je to srozumitelne? zadny parametr jsem neobjev"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0328,
+      "kind": "false_negative",
+      "excerpt": "unpaid continues to expand as stock climbs up ! ( ) up announced further expansion with . healthy and premium dog foods grossed in , up from in previous years. read up on over the holiday, we think you will see even more fireworks on thursday morning! i sent a text msg to last night when began and i"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.034,
+      "kind": "false_negative",
+      "excerpt": "sends illegal spam [ ] ..you are receiving this email notification because sends illegal unsolicited commercial spam <- our mission: worldwide boycott of software / hardware / service show your support: \"don't support illegal spam, don't buy products\" our goal: 100 billion views / 99.9% internet sat"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0415,
+      "kind": "false_negative",
+      "excerpt": "everything ok looking to increase your . vist at urltoken to settle that. that that hardly were there is conquering thanks. ."
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0477,
+      "kind": "false_negative",
+      "excerpt": "- the next to the guiness' book?!.. - the next to the guiness' book?!.. urltoken you have not tried yet?"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0547,
+      "kind": "false_negative",
+      "excerpt": "re: two editions of the series extreme makeover seem especially appropriate for abc's fall 2004-05 schedule, since the beleaguered network's lineup is undergoing quite an overhaul itself. when democratic presidential candidate meets with independent rival on , kerry isn't likely to ask him to leave "
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0704,
+      "kind": "false_negative",
+      "excerpt": "use federal law to remove negative marks from your report <!--washington - attorney general confidently deflected ' demands thursday for details in the firings of , appearing ever more likely to survive accusations that the dismissals were politically motivated. advertisement republican lawmakers ru"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0714,
+      "kind": "false_negative",
+      "excerpt": "fw: , ! i .#^-^ edmhouse \u04fb i g@ t y"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0787,
+      "kind": "false_negative",
+      "excerpt": "profit optimization workshop for immediate release profit optimization workshop - - , the world's leader in pricing and revenue optimization science and software, and the pioneer and dominant provider of revenue management to the airline and energy industries, today announced that its energy profit "
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.0829,
+      "kind": "false_negative",
+      "excerpt": "sooner bowl trip with the headed to a bowl (possibly the national championship ), you can now register for 's bowl travel program. whether ou's headed to , , or , we'll be offering complete air and \"land only\" packages, each designed to make your travels fun and carefree. so pre-register today and g"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.092,
+      "kind": "false_negative",
+      "excerpt": "attn. facilities managers are you in the need for professional furniture service? is your modular (cubicle) furniture being mis-treated by inexperienced service companies? has put together an outfit of extensively experienced technicians which have been acquired from some of houston's top leading fu"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1028,
+      "kind": "false_negative",
+      "excerpt": "it's a weird combination that doesn't entirely work and feels disjointed in the end. it turned out for many who invested their savings in the coupon privatization that these grand schemes were elaborate swindles. \"everyone is out to have a good time. this is especially difficult given that many of t"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1065,
+      "kind": "false_negative",
+      "excerpt": "w7 . . . . ( ) index : : : : : :"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1169,
+      "kind": "false_negative",
+      "excerpt": "- section 1. files to the appropriate sibling directories once the files are built. , a specialist in weaving looms, had come to from soon after the treaty of rapallo. in order for the to manage a given name space prudently, it needs guidelines describing the conditions under which new values can be"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1206,
+      "kind": "false_negative",
+      "excerpt": "understanding frame relay on invites you to attend. understanding frame relay 1day sat introduction throughout the 1980's, lan technology and its implementation grew at a phenomenal rate. by the 1990's, the ability to inter-network lans via the wide area was limited to relatively slow speed and inef"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.132,
+      "kind": "false_negative",
+      "excerpt": "but serpentine remember and cannot go wrong at 2 cents watch it like a hawk, else you'll miss this one too this is projected to go to in short alone, for long look at and get in , don't get left out again .. the finger is pointing at him.\" authorities were trying to determine whether first for the f"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1343,
+      "kind": "false_negative",
+      "excerpt": "the rowsorterevent for the action allows you to discover how many rows were present before the sort, in the event that the rowsorter filters rows in or out of the view. this connection enables applets on web sites to be run within a browser on the desktop. initiating sso the following excerpt from t"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1475,
+      "kind": "false_negative",
+      "excerpt": "positions available: - centre apologize for multiple posting the new interdisciplinary centre of excellence - centre for computational and systems biology has been established in the trento region ( ). the main objectives and activities of the centre are: overall objectives 1. to advance the state o"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.163,
+      "kind": "false_negative",
+      "excerpt": "approval process office annual report trust contact not content external internet sitescopy mmviabout help subscribe podcast schedules launch player tvthe for london max degc min office annual report trust contact not content external internet sitescopy mmviabout help subscribe podcast schedules lau"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1671,
+      "kind": "false_negative",
+      "excerpt": "it's a very tasty red you'll probably have some trouble stopping drinking, plus it has a nice little frog on the label. the board really separates those with an every day urltoken mitment to exercise (eg. :: website design: . it's also nice to see that 20 minutes here, 20 minutes there all add up ov"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1815,
+      "kind": "false_negative",
+      "excerpt": "reminder to activate your account, this is a reminder to let you know your free trial is ready when you are. raise your email delivery rates today. to activate your trial you must click on the button below: here is all your registration info including your username and password. please keep this ema"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1852,
+      "kind": "false_negative",
+      "excerpt": "bpm success story visit on the web read about and learn how helps customers in government \"we selected because of their ability to deliver a powerful business process management solution in a matter of weeks. as well as driving consistent operational efficiency, the system's real-time monitoring cap"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1938,
+      "kind": "false_negative",
+      "excerpt": "order shipping confirmation order # dear , thank you for shopping with . please see below for the shipping status of each item in your order. ship to name & address: 20219 se fernridge drive (for privacy reasons, the city, state and zip code have been omitted.) item description item # qty price stat"
+    },
+    {
+      "set": "meajor_test",
+      "label": 1,
+      "score": 0.1988,
+      "kind": "false_negative",
+      "excerpt": "sign up to get , refer 15 people to get ! sign up to get , refer 15 people to get ! go to the web page: urltoken free personalized email at sign up at urltoken"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 1,
+      "score": 0.0144,
+      "kind": "false_negative",
+      "excerpt": "overdue invoice_863637 ready for your review via onedrive cloud. dear jose, i am reaching out regarding the patterson supply account. as of today the account is past due $32,882.27 with the oldest invoice over 90 days past due. i have attached the past due invoices. the $4.37 and $4.33 are late fees"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 1,
+      "score": 0.4479,
+      "kind": "false_negative",
+      "excerpt": "fw: [ summary appointment ] alert: amazon biiiing problem - (case id: evooqxbx) no. 18237548 - date: tue dec 31 2019 18:34:57 gmt+0000 (coordinated universal time) hello,${randstring(10)} to avoid interruption to your service,please ver${randstring(10)}ify or update your pay${randstring(10)}ment in$"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.6659,
+      "kind": "false_positive",
+      "excerpt": "ensuring code quality in multi-threaded applications sys-con technical whitepapers featured whitepapers extended validation ssl certificates extended validation (ev) is a new standard in ssl certificates. this guide explains the needs which drove the development of this standard and how it addresses"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.8239,
+      "kind": "false_positive",
+      "excerpt": "your verticalnet ebusiness training services login information your login information for verticalnet's ebusiness training services: username: 90006618 password: davisd84259 you can log in to your account by clicking here: log in here < urltoken > please save this email for future use."
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.8457,
+      "kind": "false_positive",
+      "excerpt": "you're invited to our friends & family event one day only! this sunday, february 10th, is our friends & family event. enjoy an extra 20% off already-reduced sale and clearance items, plus save on regular prices, too! there are three ways to save: in stores, online or by catalog. shop our friends & f"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.8645,
+      "kind": "false_positive",
+      "excerpt": "[zzzzteana] meaningful sentences the scotsman thu 22 aug 2002 meaningful sentences tracey lawson if you ever wanted to look like \"one of the most dangerous inmates in prison history\", as one judge described charles bronson, nows your chance. bronson - the serial hostage taker, not the movie star - h"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.8813,
+      "kind": "false_positive",
+      "excerpt": "the case for spam spamassassin is hurting democracy! owen --------------------------------------------------------------------------------------------------------------------- urltoken internet can level the political playing field by mike mccurry and larry purpuro not many months from now, people a"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.9497,
+      "kind": "false_positive",
+      "excerpt": "sandisk 4gb titanium $19.99 . 2gb 150x sd $4 . 4gb microsd $19 to view this email as a web page, go to the link below, or copy and paste it into your browser's address window. urltoken patriot memory urltoken 4gb secure digital (sdhc) card class 6 the (class 6) \"signature line\" of high-capacity secu"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.9662,
+      "kind": "false_positive",
+      "excerpt": "[zzzzteana] compensation for world's youngest mother urltoken lima, peru (reuters) -- lina medina's parents thought their 5-year-old daughter had a huge abdominal tumor and when shamans in their remote village in peru's andes could find no cure, her father carried her to hospital. just over a month "
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.9874,
+      "kind": "false_positive",
+      "excerpt": "customer appreciation savings this email was sent to you by heartland america. to ensure delivery to your inbox (not bulk or junk mail folders), please add emailtoken to your address book. urltoken during the next 72 hours, we're saying \"thanks\" to great customers like you with savings of up to 70%!"
+    },
+    {
+      "set": "nazario_5_test",
+      "label": 0,
+      "score": 0.9995,
+      "kind": "false_positive",
+      "excerpt": "find a sweet deal this valentine's day at gnc! can\u0092t see your savings? view this email as a web page. urltoken find a sweet deal this valentine's day at gnc surprise that special someone or treat yourself! homedics(r), inc. therapist select(tm) professional percussion massager reg. $39.99, gold card"
+    }
+  ]
+}

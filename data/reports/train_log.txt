@@ -1,0 +1,15 @@
+[09:05:21] run train-20261013T033521Z-9d474c: corpus 104595 rows
+[09:05:22] pool meajor_only: fitting TF-IDF on 67385 training rows
+[09:07:03]   features 600000 in 87s
+[09:07:23]   meajor_only|logreg|C=1.0: val meajor F1=0.9798 nazario_5 F1=0.8211 (sel=0.9004, fit 20s)
+[09:07:46]   meajor_only|logreg|C=4.0: val meajor F1=0.982 nazario_5 F1=0.8208 (sel=0.9014, fit 23s)
+[09:07:50]   meajor_only|linear_svm|C=0.1: val meajor F1=0.9817 nazario_5 F1=0.817 (sel=0.8993, fit 3s)
+[09:07:54]   meajor_only|linear_svm|C=0.5: val meajor F1=0.9845 nazario_5 F1=0.8053 (sel=0.8949, fit 4s)
+[09:07:54] pool meajor+nazario_5: fitting TF-IDF on 69339 training rows
+[09:09:29]   features 600000 in 80s
+[09:09:51]   meajor+nazario_5|logreg|C=1.0: val meajor F1=0.9793 nazario_5 F1=0.972 (sel=0.9756, fit 21s)
+[09:10:10]   meajor+nazario_5|logreg|C=4.0: val meajor F1=0.9822 nazario_5 F1=0.9765 (sel=0.9793, fit 19s)
+[09:10:13]   meajor+nazario_5|linear_svm|C=0.1: val meajor F1=0.9816 nazario_5 F1=0.9741 (sel=0.9778, fit 3s)
+[09:10:18]   meajor+nazario_5|linear_svm|C=0.5: val meajor F1=0.9847 nazario_5 F1=0.9764 (sel=0.9806, fit 4s)
+[09:10:18] selected meajor+nazario_5|linear_svm|C=0.5
+[09:10:36] saved C:\Users\LIBARY-1\Desktop\ai engineering hackathon\models\phishdna_text_model.joblib (10.4 MB) sha256=e1a96befb499 threshold=0.5211

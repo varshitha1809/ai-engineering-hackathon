@@ -1,0 +1,12 @@
+From: HR Notifications <hr-notify@staff-portal.test>
+To: payroll@phishdna-demo.local
+Subject: Action needed: confirm payroll document
+Date: Tue, 06 Oct 2026 10:30:00 +0000
+Message-ID: <demo-03-docshare-c@staff-portal.test>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Please review the payroll document and confirm your details today.
+
+Open: https://secure-docs-portal.test/auth/review?doc=Q4-payroll

@@ -1,0 +1,24 @@
+From: Accounts <ap@invoice-viewer.test>
+To: finance@phishdna-demo.local
+Subject: Overdue invoice 4471
+Date: Wed, 07 Oct 2026 20:30:00 +0000
+Message-ID: <demo-09-attach-a@invoice-viewer.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============8664550469793816062=="
+
+--===============8664550469793816062==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Please see the attached invoice and arrange payment today.
+
+--===============8664550469793816062==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice_4471.pdf.exe"
+MIME-Version: 1.0
+
+TVqQAGRlbW8taW5lcnQtZXhlY3V0YWJsZS1ieXRlcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+
+--===============8664550469793816062==--

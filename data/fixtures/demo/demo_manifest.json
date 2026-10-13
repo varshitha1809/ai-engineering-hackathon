@@ -1,0 +1,67 @@
+{
+  "data_label": "local sample data",
+  "files": [
+    "01-docshare-a.eml",
+    "02-docshare-b.eml",
+    "03-docshare-c.eml",
+    "04-vendor-1.eml",
+    "05-vendor-2.eml",
+    "06-vendor-3.eml",
+    "07-ceo-bec-1.eml",
+    "08-ceo-bec-2.eml",
+    "09-attach-a.eml",
+    "10-attach-b.eml",
+    "11-hidden-instr.eml",
+    "12-benign-allhands.eml",
+    "13-benign-it.eml",
+    "14-benign-vendor.eml",
+    "15-parcel-fee.eml"
+  ],
+  "profiles": [
+    {
+      "kind": "vip",
+      "name": "Dana Whitfield",
+      "emails": [
+        "dana.whitfield@phishdna-demo.local"
+      ],
+      "domains": [
+        "phishdna-demo.local"
+      ],
+      "notes": "CEO (local demo profile)"
+    },
+    {
+      "kind": "vendor",
+      "name": "Northwind Supplies",
+      "emails": [
+        "billing@northwind-supplies.example"
+      ],
+      "domains": [
+        "northwind-supplies.example"
+      ],
+      "notes": "Vendor (local demo profile)"
+    }
+  ],
+  "local_iocs": [
+    {
+      "type": "domain",
+      "value": "invoice-viewer.test",
+      "reputation": "malicious",
+      "source": "local demo IOC list",
+      "notes": "synthetic demo indicator"
+    },
+    {
+      "type": "url",
+      "value": "https://parcel-redelivery.test/fee",
+      "reputation": "malicious",
+      "source": "local demo IOC list",
+      "notes": "synthetic demo indicator"
+    }
+  ],
+  "expected_relationships": {
+    "01,02,03": "shared URL (exact); 01-02 near-duplicate content",
+    "04,05,06": "shared Reply-To address (low-and-slow vendor impersonation)",
+    "07,08": "same impersonated VIP profile (context clue, different free-mail senders)",
+    "09,10": "shared attachment SHA-256",
+    "11,12,13,14,15": "no relationship expected (14 shares the vendor sender domain with 04-06: weak edge only)"
+  }
+}

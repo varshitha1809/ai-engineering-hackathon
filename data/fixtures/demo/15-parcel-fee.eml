@@ -1,0 +1,11 @@
+From: Parcel Service <noreply@parcel-alerts.test>
+To: reception@phishdna-demo.local
+Subject: Delivery attempt failed
+Date: Fri, 09 Oct 2026 22:30:00 +0000
+Message-ID: <demo-15-parcel-fee@parcel-alerts.test>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+We could not deliver your parcel. Pay the redelivery fee of $2.99 here: https=
+://parcel-redelivery.test/fee

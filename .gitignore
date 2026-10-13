@@ -1,0 +1,15 @@
+# secrets
+.env
+# large/raw data (reproducible via scripts/download_datasets.py)
+data/raw/
+data/processed/*.parquet
+data/processed/*.csv
+# local runtime state
+backend/phishdna.db
+*.db-journal
+__pycache__/
+.pytest_cache/
+*.pyc
+# frontend
+frontend/node_modules/
+frontend/dist/

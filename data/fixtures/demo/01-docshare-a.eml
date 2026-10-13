@@ -1,0 +1,30 @@
+From: Document Center <share@docs-notify.test>
+To: finance@phishdna-demo.local
+Subject: Q4 payroll adjustments shared with you
+Date: Mon, 05 Oct 2026 08:30:00 +0000
+Message-ID: <demo-01-docshare-a@docs-notify.test>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============2053921466835438248=="
+
+--===============2053921466835438248==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+A document has been shared with you: Q4 payroll adjustments.xlsx
+
+Sign in to view the document: https://secure-docs-portal.test/auth/review?doc=
+=3DQ4-payroll
+
+This link expires in 24 hours.
+
+--===============2053921466835438248==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<p>A document has been shared with you: <b>Q4 payroll adjustments.xlsx</b></p=
+><p><a href=3D"https://secure-docs-portal.test/auth/review?doc=3DQ4-payroll">=
+https://sharepoint.com/finance/Q4</a></p><p>This link expires in 24 hours.</p>
+
+--===============2053921466835438248==--

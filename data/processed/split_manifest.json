@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "prep_version": "textprep-1.0",
+  "counts": {
+    "meajor|test|0": 8204,
+    "meajor|test|1": 6236,
+    "meajor|train|0": 38284,
+    "meajor|train|1": 29101,
+    "meajor|val|0": 8204,
+    "meajor|val|1": 6237,
+    "nazario_5|test|0": 203,
+    "nazario_5|test|1": 216,
+    "nazario_5|train|0": 946,
+    "nazario_5|train|1": 1008,
+    "nazario_5|val|0": 203,
+    "nazario_5|val|1": 215
+  },
+  "corpus_sha256": "86ff166ee1d02d4d35cbd8952d1f4a35ed3c65d14352474bd77963641af206fc"
+}

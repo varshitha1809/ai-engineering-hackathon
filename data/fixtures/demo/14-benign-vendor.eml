@@ -1,0 +1,28 @@
+From: Northwind Supplies <billing@northwind-supplies.example>
+To: finance@phishdna-demo.local
+Subject: Invoice INV-8001
+Date: Thu, 08 Oct 2026 06:30:00 +0000
+Message-ID: <demo-14-benign-vendor@northwind-supplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============4858164868143101726=="
+
+--===============4858164868143101726==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Invoice INV-8001 for October deliveries is attached. Payment terms net 30; ba=
+nk details unchanged.
+
+Northwind Billing
+
+--===============4858164868143101726==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="INV-8001.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjcKJWRlbW8K
+
+--===============4858164868143101726==--

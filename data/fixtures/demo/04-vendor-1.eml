@@ -1,0 +1,16 @@
+From: Northwind Supplies <billing@northwind-supplies.example>
+To: finance@phishdna-demo.local
+Subject: Statement for September
+Date: Tue, 06 Oct 2026 14:30:00 +0000
+Message-ID: <demo-04-vendor-1@northwind-supplies.example>
+Reply-To: accounts.northwind@remit-desk.test
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello,
+
+Please find our statement for September. Let us know if anything looks incorr=
+ect.
+
+Northwind Billing

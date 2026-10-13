@@ -1,0 +1,291 @@
+{
+  "model_version": "textclf-linear_svm-e1a96befb4",
+  "run_id": "train-20261013T033521Z-9d474c",
+  "created_at": "2026-10-13T03:40:36.855631+00:00",
+  "artifact": "phishdna_text_model.joblib",
+  "artifact_sha256": "e1a96befb499d82d1cb92c891967160bbea1bd9eb00b8f659f2ba7ba467317dd",
+  "artifact_bytes": 10382291,
+  "classifier": "linear_svm",
+  "C": 0.5,
+  "training_pool": "meajor+nazario_5",
+  "train_rows": 69339,
+  "n_features": 600000,
+  "features": "word 1-2gram TF-IDF (sublinear) + char_wb 3-5gram TF-IDF (first 4000 chars)",
+  "label_mapping": {
+    "0": "benign",
+    "1": "malicious (MeAJOR label 1 / Nazario phishing)"
+  },
+  "decision_threshold": 0.521101,
+  "threshold_selection": "max F1 on validation (MeAJOR val + Nazario_5 val)",
+  "calibration": {
+    "method": "sigmoid (Platt) fitted on validation split",
+    "val_brier": 0.0108,
+    "val_ece_10bin": 0.0013,
+    "note": "Reliability measured on validation; the backend still presents the fused output as a 0-100 policy risk score, not a probability."
+  },
+  "prep_version": "textprep-1.0",
+  "corpus_sha256": "86ff166ee1d02d4d35cbd8952d1f4a35ed3c65d14352474bd77963641af206fc",
+  "seed": 42,
+  "sklearn_version": "1.9.1",
+  "python": "3.11.9",
+  "candidates": [
+    {
+      "id": "meajor_only|logreg|C=1.0",
+      "pool": "meajor_only",
+      "classifier": "logreg",
+      "C": 1.0,
+      "train_rows": 67385,
+      "n_features": 600000,
+      "fit_seconds": 19.6,
+      "feature_seconds": 86.5,
+      "val_threshold": 0.442159,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.9734,
+          "recall": 0.9862,
+          "f1": 0.9798,
+          "fpr": 0.0205,
+          "pr_auc": 0.9972
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9455,
+          "recall": 0.7256,
+          "f1": 0.8211,
+          "fpr": 0.0443,
+          "pr_auc": 0.9406
+        }
+      },
+      "selection_score_mean_f1": 0.9004
+    },
+    {
+      "id": "meajor_only|logreg|C=4.0",
+      "pool": "meajor_only",
+      "classifier": "logreg",
+      "C": 4.0,
+      "train_rows": 67385,
+      "n_features": 600000,
+      "fit_seconds": 23.3,
+      "feature_seconds": 86.5,
+      "val_threshold": 0.39097,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.9734,
+          "recall": 0.9907,
+          "f1": 0.982,
+          "fpr": 0.0206,
+          "pr_auc": 0.9979
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9294,
+          "recall": 0.7349,
+          "f1": 0.8208,
+          "fpr": 0.0591,
+          "pr_auc": 0.9428
+        }
+      },
+      "selection_score_mean_f1": 0.9014
+    },
+    {
+      "id": "meajor_only|linear_svm|C=0.1",
+      "pool": "meajor_only",
+      "classifier": "linear_svm",
+      "C": 0.1,
+      "train_rows": 67385,
+      "n_features": 600000,
+      "fit_seconds": 3.4,
+      "feature_seconds": 86.5,
+      "val_threshold": -0.041361,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.977,
+          "recall": 0.9865,
+          "f1": 0.9817,
+          "fpr": 0.0177,
+          "pr_auc": 0.9976
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9506,
+          "recall": 0.7163,
+          "f1": 0.817,
+          "fpr": 0.0394,
+          "pr_auc": 0.9462
+        }
+      },
+      "selection_score_mean_f1": 0.8993
+    },
+    {
+      "id": "meajor_only|linear_svm|C=0.5",
+      "pool": "meajor_only",
+      "classifier": "linear_svm",
+      "C": 0.5,
+      "train_rows": 67385,
+      "n_features": 600000,
+      "fit_seconds": 4.4,
+      "feature_seconds": 86.5,
+      "val_threshold": -0.062029,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.9798,
+          "recall": 0.9893,
+          "f1": 0.9845,
+          "fpr": 0.0155,
+          "pr_auc": 0.9981
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9273,
+          "recall": 0.7116,
+          "f1": 0.8053,
+          "fpr": 0.0591,
+          "pr_auc": 0.9447
+        }
+      },
+      "selection_score_mean_f1": 0.8949
+    },
+    {
+      "id": "meajor+nazario_5|logreg|C=1.0",
+      "pool": "meajor+nazario_5",
+      "classifier": "logreg",
+      "C": 1.0,
+      "train_rows": 69339,
+      "n_features": 600000,
+      "fit_seconds": 21.0,
+      "feature_seconds": 80.2,
+      "val_threshold": 0.455839,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.9723,
+          "recall": 0.9864,
+          "f1": 0.9793,
+          "fpr": 0.0213,
+          "pr_auc": 0.9973
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9765,
+          "recall": 0.9674,
+          "f1": 0.972,
+          "fpr": 0.0246,
+          "pr_auc": 0.9956
+        }
+      },
+      "selection_score_mean_f1": 0.9756
+    },
+    {
+      "id": "meajor+nazario_5|logreg|C=4.0",
+      "pool": "meajor+nazario_5",
+      "classifier": "logreg",
+      "C": 4.0,
+      "train_rows": 69339,
+      "n_features": 600000,
+      "fit_seconds": 19.0,
+      "feature_seconds": 80.2,
+      "val_threshold": 0.502174,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.9796,
+          "recall": 0.9848,
+          "f1": 0.9822,
+          "fpr": 0.0156,
+          "pr_auc": 0.998
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9858,
+          "recall": 0.9674,
+          "f1": 0.9765,
+          "fpr": 0.0148,
+          "pr_auc": 0.9976
+        }
+      },
+      "selection_score_mean_f1": 0.9793
+    },
+    {
+      "id": "meajor+nazario_5|linear_svm|C=0.1",
+      "pool": "meajor+nazario_5",
+      "classifier": "linear_svm",
+      "C": 0.1,
+      "train_rows": 69339,
+      "n_features": 600000,
+      "fit_seconds": 3.0,
+      "feature_seconds": 80.2,
+      "val_threshold": -0.045285,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.9759,
+          "recall": 0.9873,
+          "f1": 0.9816,
+          "fpr": 0.0185,
+          "pr_auc": 0.9977
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9857,
+          "recall": 0.9628,
+          "f1": 0.9741,
+          "fpr": 0.0148,
+          "pr_auc": 0.9972
+        }
+      },
+      "selection_score_mean_f1": 0.9778
+    },
+    {
+      "id": "meajor+nazario_5|linear_svm|C=0.5",
+      "pool": "meajor+nazario_5",
+      "classifier": "linear_svm",
+      "C": 0.5,
+      "train_rows": 69339,
+      "n_features": 600000,
+      "fit_seconds": 4.3,
+      "feature_seconds": 80.2,
+      "val_threshold": 0.033689,
+      "val": {
+        "meajor": {
+          "n": 14441,
+          "positives": 6237,
+          "precision": 0.9838,
+          "recall": 0.9856,
+          "f1": 0.9847,
+          "fpr": 0.0123,
+          "pr_auc": 0.9982
+        },
+        "nazario_5": {
+          "n": 418,
+          "positives": 215,
+          "precision": 0.9904,
+          "recall": 0.9628,
+          "f1": 0.9764,
+          "fpr": 0.0099,
+          "pr_auc": 0.9986
+        }
+      },
+      "selection_score_mean_f1": 0.9806
+    }
+  ],
+  "selection_rule": "highest mean validation F1 across MeAJOR and Nazario_5; tie -> faster fit",
+  "quick_mode": false
+}

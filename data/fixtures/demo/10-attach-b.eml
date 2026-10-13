@@ -1,0 +1,24 @@
+From: Billing <billing@payments-notice.test>
+To: finance@phishdna-demo.local
+Subject: Payment reminder
+Date: Thu, 08 Oct 2026 20:30:00 +0000
+Message-ID: <demo-10-attach-b@payments-notice.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============2159841957392700387=="
+
+--===============2159841957392700387==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Reminder: invoice attached. Open it to see the amount due.
+
+--===============2159841957392700387==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Reminder.pdf.exe"
+MIME-Version: 1.0
+
+TVqQAGRlbW8taW5lcnQtZXhlY3V0YWJsZS1ieXRlcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+
+--===============2159841957392700387==--

@@ -1,0 +1,1203 @@
+{
+ "run_id": "EVAL-261013-041727-2540",
+ "params": {
+  "suite": "dataset_holdout",
+  "variants": true,
+  "splits": [
+   "dev",
+   "holdout"
+  ],
+  "dataset_sample": 600
+ },
+ "model_version": "textclf-linear_svm-e1a96befb4",
+ "rules_version": "rules-1.0.0",
+ "fusion_version": "fusion-1.0.0",
+ "metrics": {
+  "threshold_text_model": 0.521101,
+  "flag_definition": [
+   "AI_INJECTION_SUSPECTED",
+   "LIKELY_PHISHING",
+   "SUSPICIOUS_REVIEW"
+  ],
+  "overall": {
+   "baseline": {
+    "n": 600,
+    "positives": 261,
+    "tp": 255,
+    "fp": 6,
+    "tn": 333,
+    "fn": 6,
+    "precision": 0.977,
+    "recall": 0.977,
+    "f1": 0.977,
+    "fpr": 0.0177,
+    "pr_auc": 0.9973
+   },
+   "hybrid": {
+    "n": 600,
+    "positives": 261,
+    "tp": 249,
+    "fp": 4,
+    "tn": 335,
+    "fn": 12,
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "pr_auc": 0.9908
+   }
+  },
+  "by_split": {
+   "holdout": {
+    "baseline": {
+     "n": 600,
+     "positives": 261,
+     "tp": 255,
+     "fp": 6,
+     "tn": 333,
+     "fn": 6,
+     "precision": 0.977,
+     "recall": 0.977,
+     "f1": 0.977,
+     "fpr": 0.0177,
+     "pr_auc": 0.9973
+    },
+    "hybrid": {
+     "n": 600,
+     "positives": 261,
+     "tp": 249,
+     "fp": 4,
+     "tn": 335,
+     "fn": 12,
+     "precision": 0.9842,
+     "recall": 0.954,
+     "f1": 0.9689,
+     "fpr": 0.0118,
+     "pr_auc": 0.9908
+    }
+   }
+  },
+  "originals_only": {
+   "baseline": {
+    "n": 600,
+    "positives": 261,
+    "tp": 255,
+    "fp": 6,
+    "tn": 333,
+    "fn": 6,
+    "precision": 0.977,
+    "recall": 0.977,
+    "f1": 0.977,
+    "fpr": 0.0177,
+    "pr_auc": 0.9973
+   },
+   "hybrid": {
+    "n": 600,
+    "positives": 261,
+    "tp": 249,
+    "fp": 4,
+    "tn": 335,
+    "fn": 12,
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "pr_auc": 0.9908
+   }
+  },
+  "variants_only": null,
+  "confusion": {
+   "baseline": {
+    "tp": 255,
+    "fp": 6,
+    "tn": 333,
+    "fn": 6
+   },
+   "hybrid": {
+    "tp": 249,
+    "fp": 4,
+    "tn": 335,
+    "fn": 12
+   }
+  },
+  "per_category": {
+   "meajor_benign": {
+    "n": 331,
+    "label": 0,
+    "baseline_flag_rate": 0.0181,
+    "hybrid_flag_rate": 0.0121,
+    "metric": "false-positive rate"
+   },
+   "meajor_malicious": {
+    "n": 252,
+    "label": 1,
+    "baseline_flag_rate": 0.9762,
+    "hybrid_flag_rate": 0.9524,
+    "metric": "recall"
+   },
+   "nazario_5_benign": {
+    "n": 8,
+    "label": 0,
+    "baseline_flag_rate": 0.0,
+    "hybrid_flag_rate": 0.0,
+    "metric": "false-positive rate"
+   },
+   "nazario_5_malicious": {
+    "n": 9,
+    "label": 1,
+    "baseline_flag_rate": 1.0,
+    "hybrid_flag_rate": 1.0,
+    "metric": "recall"
+   }
+  },
+  "per_transform": {
+   "original": {
+    "n": 600,
+    "malicious_n": 261,
+    "benign_n": 339,
+    "baseline_recall": 0.977,
+    "hybrid_recall": 0.954,
+    "baseline_fpr": 0.0177,
+    "hybrid_fpr": 0.0118
+   }
+  },
+  "ablation": {
+   "full hybrid": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   },
+   "without text_model": {
+    "precision": 1.0,
+    "recall": 0.0153,
+    "f1": 0.0302,
+    "fpr": 0.0,
+    "fn": 257,
+    "fp": 0
+   },
+   "without intent": {
+    "precision": 0.988,
+    "recall": 0.9464,
+    "f1": 0.9667,
+    "fpr": 0.0088,
+    "fn": 14,
+    "fp": 3
+   },
+   "without identity": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   },
+   "without url": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   },
+   "without attachment": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   },
+   "without evasion": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   },
+   "without context": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   },
+   "without ai_injection": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   },
+   "without reputation": {
+    "precision": 0.9842,
+    "recall": 0.954,
+    "f1": 0.9689,
+    "fpr": 0.0118,
+    "fn": 12,
+    "fp": 4
+   }
+  },
+  "coverage_matrix": {
+   "definition": "fraction of items where the layer produced evidence (text_model: score above threshold)",
+   "rows": {
+    "meajor_benign": {
+     "text_model": 0.018,
+     "intent": 0.163,
+     "identity": 0.0,
+     "url": 0.003,
+     "attachment": 0.0,
+     "evasion": 0.003,
+     "context": 0.0,
+     "ai_injection": 0.018,
+     "reputation": 0.0
+    },
+    "meajor_malicious": {
+     "text_model": 0.976,
+     "intent": 0.206,
+     "identity": 0.0,
+     "url": 0.008,
+     "attachment": 0.0,
+     "evasion": 0.016,
+     "context": 0.0,
+     "ai_injection": 0.004,
+     "reputation": 0.0
+    },
+    "nazario_5_benign": {
+     "text_model": 0.0,
+     "intent": 0.375,
+     "identity": 0.0,
+     "url": 0.0,
+     "attachment": 0.0,
+     "evasion": 0.0,
+     "context": 0.0,
+     "ai_injection": 0.125,
+     "reputation": 0.0
+    },
+    "nazario_5_malicious": {
+     "text_model": 1.0,
+     "intent": 0.889,
+     "identity": 0.0,
+     "url": 0.0,
+     "attachment": 0.0,
+     "evasion": 0.0,
+     "context": 0.0,
+     "ai_injection": 0.0,
+     "reputation": 0.0
+    }
+   }
+  },
+  "latency_ms": {
+   "hybrid_p50": 6.05,
+   "hybrid_p95": 16.99,
+   "model_p50": 3.07,
+   "model_p95": 6.2,
+   "n": 600
+  },
+  "failures": {
+   "hybrid_false_negatives": [
+    {
+     "item_id": "ds-78619",
+     "base_id": "ds-78619",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.767,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 42.2,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.77 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.77",
+       "component": "text_model",
+       "confidence": 0.767,
+       "status": "observed",
+       "observed_value": "score=0.767, threshold=0.521; top features: never, earth, sun, come",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 42.2 stayed below the review threshold (35). Text model 0.77 vs threshold 0.52. Layers with evidence: text_model=0.77. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-14540",
+     "base_id": "ds-14540",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.092,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 5.1,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.09",
+       "component": "text_model",
+       "confidence": 0.092,
+       "status": "observed",
+       "observed_value": "score=0.092, threshold=0.521; top features: your, toll, furniture",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 5.1 stayed below the review threshold (35). Text model 0.09 vs threshold 0.52. Layers with evidence: text_model=0.09. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-41863",
+     "base_id": "ds-41863",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.8313,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 45.7,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.83 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.83",
+       "component": "text_model",
+       "confidence": 0.831,
+       "status": "observed",
+       "observed_value": "score=0.831, threshold=0.521; top features: your account, !, your, account, assistance",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 45.7 stayed below the review threshold (35). Text model 0.83 vs threshold 0.52. Layers with evidence: text_model=0.83. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-90106",
+     "base_id": "ds-90106",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.8421,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 46.3,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.84 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.84",
+       "component": "text_model",
+       "confidence": 0.842,
+       "status": "observed",
+       "observed_value": "score=0.842, threshold=0.521; top features: find out, he",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 46.3 stayed below the review threshold (35). Text model 0.84 vs threshold 0.52. Layers with evidence: text_model=0.84. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-50347",
+     "base_id": "ds-50347",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.7373,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 40.6,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.74 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.74",
+       "component": "text_model",
+       "confidence": 0.737,
+       "status": "observed",
+       "observed_value": "score=0.737, threshold=0.521; top features: ur, ur unit, your",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 40.6 stayed below the review threshold (35). Text model 0.74 vs threshold 0.52. Layers with evidence: text_model=0.74. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-73414",
+     "base_id": "ds-73414",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.0024,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 0.1,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.00",
+       "component": "text_model",
+       "confidence": 0.002,
+       "status": "observed",
+       "observed_value": "score=0.002, threshold=0.521; top features: urltoken",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 0.1 stayed below the review threshold (35). Text model 0.00 vs threshold 0.52. Layers with evidence: text_model=0.00. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-68768",
+     "base_id": "ds-68768",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.5141,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 28.3,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.51",
+       "component": "text_model",
+       "confidence": 0.514,
+       "status": "observed",
+       "observed_value": "score=0.514, threshold=0.521; top features: news urltoken, exchange news, urltoken",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 28.3 stayed below the review threshold (35). Text model 0.51 vs threshold 0.52. Layers with evidence: text_model=0.51. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-71952",
+     "base_id": "ds-71952",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.0106,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 0.6,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.01",
+       "component": "text_model",
+       "confidence": 0.011,
+       "status": "observed",
+       "observed_value": "score=0.011, threshold=0.521; top features: you can, urltoken",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 0.6 stayed below the review threshold (35). Text model 0.01 vs threshold 0.52. Layers with evidence: text_model=0.01. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-59556",
+     "base_id": "ds-59556",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.614,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 33.8,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.61",
+       "component": "text_model",
+       "confidence": 0.614,
+       "status": "observed",
+       "observed_value": "score=0.614, threshold=0.521; top features: art",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 33.8 stayed below the review threshold (35). Text model 0.61 vs threshold 0.52. Layers with evidence: text_model=0.61. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-80567",
+     "base_id": "ds-80567",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.8459,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 46.5,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.85 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.85",
+       "component": "text_model",
+       "confidence": 0.846,
+       "status": "observed",
+       "observed_value": "score=0.846, threshold=0.521; top features: your, me at",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 46.5 stayed below the review threshold (35). Text model 0.85 vs threshold 0.52. Layers with evidence: text_model=0.85. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-12246",
+     "base_id": "ds-12246",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.2323,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 24.4,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F001",
+       "title": "Requested action: click link",
+       "component": "intent",
+       "confidence": 0.3,
+       "status": "observed",
+       "observed_value": "\u2026business owners used to hire employees. click here to see the results of last month's poll\u2026",
+       "source_location": "body[1805:1815]"
+      },
+      {
+       "finding_id": "F003",
+       "title": "Trained text classifier score 0.23",
+       "component": "text_model",
+       "confidence": 0.232,
+       "status": "observed",
+       "observed_value": "score=0.232, threshold=0.521; top features: your, register, you can, from future",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F002",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 24.4 stayed below the review threshold (35). Text model 0.23 vs threshold 0.52. Layers with evidence: text_model=0.23, intent=0.30."
+    },
+    {
+     "item_id": "ds-51481",
+     "base_id": "ds-51481",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.1988,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 10.9,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.20",
+       "component": "text_model",
+       "confidence": 0.199,
+       "status": "observed",
+       "observed_value": "score=0.199, threshold=0.521; top features: !, up to, urltoken",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 10.9 stayed below the review threshold (35). Text model 0.20 vs threshold 0.52. Layers with evidence: text_model=0.20. No requested action or tactic was extracted by the intent rules."
+    }
+   ],
+   "hybrid_false_positives": [
+    {
+     "item_id": "ds-11642",
+     "base_id": "ds-11642",
+     "category": "meajor_benign",
+     "transform": "original",
+     "label": 0,
+     "baseline_score": 0.9219,
+     "hybrid_verdict": "SUSPICIOUS_REVIEW",
+     "hybrid_score": 50.7,
+     "subject": "",
+     "decision_reasons": [
+      "risk 50.7 at or above review threshold 35.0"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.92",
+       "component": "text_model",
+       "confidence": 0.922,
+       "status": "observed",
+       "observed_value": "score=0.922, threshold=0.521; top features: he, for you, mail, you to",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "False alarm: verdict SUSPICIOUS_REVIEW because risk 50.7 at or above review threshold 35.0. Layers with evidence: text_model=0.92."
+    },
+    {
+     "item_id": "ds-22237",
+     "base_id": "ds-22237",
+     "category": "meajor_benign",
+     "transform": "original",
+     "label": 0,
+     "baseline_score": 0.8943,
+     "hybrid_verdict": "SUSPICIOUS_REVIEW",
+     "hybrid_score": 49.2,
+     "subject": "",
+     "decision_reasons": [
+      "risk 49.2 at or above review threshold 35.0"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.89",
+       "component": "text_model",
+       "confidence": 0.894,
+       "status": "observed",
+       "observed_value": "score=0.894, threshold=0.521; top features: igh, nig, t., ght, ight",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "False alarm: verdict SUSPICIOUS_REVIEW because risk 49.2 at or above review threshold 35.0. Layers with evidence: text_model=0.89."
+    },
+    {
+     "item_id": "ds-21832",
+     "base_id": "ds-21832",
+     "category": "meajor_benign",
+     "transform": "original",
+     "label": 0,
+     "baseline_score": 0.8857,
+     "hybrid_verdict": "SUSPICIOUS_REVIEW",
+     "hybrid_score": 57.7,
+     "subject": "",
+     "decision_reasons": [
+      "risk 57.7 at or above review threshold 35.0"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F003",
+       "title": "Trained text classifier score 0.89",
+       "component": "text_model",
+       "confidence": 0.886,
+       "status": "observed",
+       "observed_value": "score=0.886, threshold=0.521; top features: your, !",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Requested action: click link",
+       "component": "intent",
+       "confidence": 0.3,
+       "status": "observed",
+       "observed_value": "\u2026day you choose, right up thru wednesday! click here now! urltoken thanksgiving day is very,\u2026",
+       "source_location": "body[894:904]"
+      },
+      {
+       "finding_id": "F002",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "False alarm: verdict SUSPICIOUS_REVIEW because risk 57.7 at or above review threshold 35.0. Layers with evidence: text_model=0.89, intent=0.30."
+    },
+    {
+     "item_id": "ds-7246",
+     "base_id": "ds-7246",
+     "category": "meajor_benign",
+     "transform": "original",
+     "label": 0,
+     "baseline_score": 0.5519,
+     "hybrid_verdict": "SUSPICIOUS_REVIEW",
+     "hybrid_score": 40.9,
+     "subject": "",
+     "decision_reasons": [
+      "risk 40.9 at or above review threshold 35.0"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F003",
+       "title": "Trained text classifier score 0.55",
+       "component": "text_model",
+       "confidence": 0.552,
+       "status": "observed",
+       "observed_value": "score=0.552, threshold=0.521; top features: your, your email, emailtoken if, account",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Social-engineering tactic: urgency",
+       "component": "intent",
+       "confidence": 0.35,
+       "status": "observed",
+       "observed_value": "\u2026action(s) listed please contact phonetoken as soon as possible to ensure that your online account is secure\u2026",
+       "source_location": "body[245:264]"
+      },
+      {
+       "finding_id": "F002",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "False alarm: verdict SUSPICIOUS_REVIEW because risk 40.9 at or above review threshold 35.0. Layers with evidence: text_model=0.55, intent=0.35."
+    }
+   ],
+   "baseline_false_negatives": 6,
+   "baseline_false_positives": 6
+  },
+  "disagreements": {
+   "baseline_missed_hybrid_caught": [],
+   "hybrid_missed_baseline_caught": [
+    {
+     "item_id": "ds-78619",
+     "base_id": "ds-78619",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.767,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 42.2,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.77 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.77",
+       "component": "text_model",
+       "confidence": 0.767,
+       "status": "observed",
+       "observed_value": "score=0.767, threshold=0.521; top features: never, earth, sun, come",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 42.2 stayed below the review threshold (35). Text model 0.77 vs threshold 0.52. Layers with evidence: text_model=0.77. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-41863",
+     "base_id": "ds-41863",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.8313,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 45.7,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.83 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.83",
+       "component": "text_model",
+       "confidence": 0.831,
+       "status": "observed",
+       "observed_value": "score=0.831, threshold=0.521; top features: your account, !, your, account, assistance",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 45.7 stayed below the review threshold (35). Text model 0.83 vs threshold 0.52. Layers with evidence: text_model=0.83. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-90106",
+     "base_id": "ds-90106",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.8421,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 46.3,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.84 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.84",
+       "component": "text_model",
+       "confidence": 0.842,
+       "status": "observed",
+       "observed_value": "score=0.842, threshold=0.521; top features: find out, he",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 46.3 stayed below the review threshold (35). Text model 0.84 vs threshold 0.52. Layers with evidence: text_model=0.84. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-50347",
+     "base_id": "ds-50347",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.7373,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 40.6,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.74 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.74",
+       "component": "text_model",
+       "confidence": 0.737,
+       "status": "observed",
+       "observed_value": "score=0.737, threshold=0.521; top features: ur, ur unit, your",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 40.6 stayed below the review threshold (35). Text model 0.74 vs threshold 0.52. Layers with evidence: text_model=0.74. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-59556",
+     "base_id": "ds-59556",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.614,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 33.8,
+     "subject": "",
+     "decision_reasons": [
+      "no strong suspicious evidence among the layers that ran (not a safety guarantee)"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.61",
+       "component": "text_model",
+       "confidence": 0.614,
+       "status": "observed",
+       "observed_value": "score=0.614, threshold=0.521; top features: art",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 33.8 stayed below the review threshold (35). Text model 0.61 vs threshold 0.52. Layers with evidence: text_model=0.61. No requested action or tactic was extracted by the intent rules."
+    },
+    {
+     "item_id": "ds-80567",
+     "base_id": "ds-80567",
+     "category": "meajor_malicious",
+     "transform": "original",
+     "label": 1,
+     "baseline_score": 0.8459,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 46.5,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.85 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.85",
+       "component": "text_model",
+       "confidence": 0.846,
+       "status": "observed",
+       "observed_value": "score=0.846, threshold=0.521; top features: your, me at",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "Missed: hybrid risk 46.5 stayed below the review threshold (35). Text model 0.85 vs threshold 0.52. Layers with evidence: text_model=0.85. No requested action or tactic was extracted by the intent rules."
+    }
+   ],
+   "baseline_false_alarm_hybrid_cleared": [
+    {
+     "item_id": "ds-54244",
+     "base_id": "ds-54244",
+     "category": "meajor_benign",
+     "transform": "original",
+     "label": 0,
+     "baseline_score": 0.6882,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 37.9,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.69 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.69",
+       "component": "text_model",
+       "confidence": 0.688,
+       "status": "observed",
+       "observed_value": "score=0.688, threshold=0.521; top features: your, ready",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "False alarm: verdict NO_STRONG_INDICATORS because only the text model leaned malicious (score 0.69 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review. Layers with evidence: text_model=0.69."
+    },
+    {
+     "item_id": "ds-24113",
+     "base_id": "ds-24113",
+     "category": "meajor_benign",
+     "transform": "original",
+     "label": 0,
+     "baseline_score": 0.8145,
+     "hybrid_verdict": "NO_STRONG_INDICATORS",
+     "hybrid_score": 44.8,
+     "subject": "",
+     "decision_reasons": [
+      "only the text model leaned malicious (score 0.81 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review"
+     ],
+     "top_findings": [
+      {
+       "finding_id": "F002",
+       "title": "Trained text classifier score 0.81",
+       "component": "text_model",
+       "confidence": 0.815,
+       "status": "observed",
+       "observed_value": "score=0.815, threshold=0.521; top features: find out, your",
+       "source_location": "subject+body"
+      },
+      {
+       "finding_id": "F001",
+       "title": "Sender/header checks unavailable",
+       "component": "coverage",
+       "confidence": 0.0,
+       "status": "unavailable",
+       "observed_value": "no header block supplied",
+       "source_location": "input"
+      }
+     ],
+     "explanation": "False alarm: verdict NO_STRONG_INDICATORS because only the text model leaned malicious (score 0.81 < 0.85) and no other layer corroborated it; recorded as uncertainty rather than routed to review. Layers with evidence: text_model=0.81."
+    }
+   ]
+  },
+  "unlabelled_ambiguous": {
+   "n": 0,
+   "verdicts": {},
+   "items": []
+  },
+  "errors": [],
+  "counts": {
+   "items": 600,
+   "labelled": 600,
+   "base_cases": 600,
+   "variants": 0
+  },
+  "dropped_variants": [],
+  "limitations": [
+   "Body text only (dataset is anonymised and has no raw headers/HTML/attachments): identity, URL, attachment and hidden-content layers cannot fire, so hybrid \u2248 text model + intent rules here.",
+   "Text was already normalised by the training pipeline (lower-cased, URLs replaced by tokens)."
+  ],
+  "data_label": "held-out ML test split sample (MeAJOR/Nazario_5, anonymised)"
+ }
+}

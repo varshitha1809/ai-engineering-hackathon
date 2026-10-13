@@ -1,0 +1,504 @@
+{
+  "prep_version": "textprep-1.0",
+  "seed": 42,
+  "generated_at": "2026-10-13T09:55:07",
+  "download_manifest": [
+    {
+      "name": "meajor_parquet",
+      "url": "https://zenodo.org/records/18471483/files/meajor_cleaned_preprocessed.parquet.gzip?download=1",
+      "record": "https://zenodo.org/records/18471483",
+      "path": "data\\raw\\meajor_cleaned_preprocessed.parquet.gzip",
+      "started_at": "2026-10-13T03:30:17.046739+00:00",
+      "status": "cached",
+      "bytes": 86278230,
+      "sha256": "5a9de6c207634f068928ed0cc68d78ee2fd594ed9a587daf4048974c95715c1a",
+      "md5": "78e397ad8447bcdba5a98097921ba8bd",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T03:30:17.259415+00:00",
+      "parse_check": "108685 rows, 20 columns"
+    },
+    {
+      "name": "ceas_08",
+      "url": "https://zenodo.org/records/8339691/files/CEAS_08.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\CEAS_08.csv",
+      "started_at": "2026-10-13T03:30:17.339396+00:00",
+      "status": "cached",
+      "bytes": 67902056,
+      "sha256": "22375e7d5f5a8229dbe987914ee9b3705656c590038662a7df6054629b376074",
+      "md5": "1f0d59191eec892a709995d48cd8decb",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T03:30:17.515082+00:00"
+    },
+    {
+      "name": "enron",
+      "url": "https://zenodo.org/records/8339691/files/Enron.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\Enron.csv",
+      "started_at": "2026-10-13T03:30:17.515082+00:00",
+      "status": "cached",
+      "bytes": 44837129,
+      "sha256": "11f28a5bdd3603f1829681ab6b55071b5f9af781b4e6694e39216b2996a96883",
+      "md5": "10489e0fdcc8af6fe62135c689367d40",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T03:30:17.624177+00:00"
+    },
+    {
+      "name": "nazario",
+      "url": "https://zenodo.org/records/8339691/files/Nazario.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\Nazario.csv",
+      "started_at": "2026-10-13T03:30:17.624177+00:00",
+      "http_status": 200,
+      "status": "ok",
+      "bytes": 7811841,
+      "expected_bytes": null,
+      "sha256": "b8fbc4158fbdfaff1ed98584c43d72e283c6352d7ade4d457d34c1d79488d184",
+      "md5": "4022d055bb7cf8602f30f768f652e91e",
+      "md5_verified": true,
+      "seconds": 16.3,
+      "finished_at": "2026-10-13T03:30:35.040909+00:00"
+    },
+    {
+      "name": "nazario_5",
+      "url": "https://zenodo.org/records/8339691/files/Nazario_5.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\Nazario_5.csv",
+      "started_at": "2026-10-13T03:30:35.040909+00:00",
+      "status": "cached",
+      "bytes": 11755517,
+      "sha256": "afef69828165619ced6661ca14a95444a1db82c7b25ae9c2619bbbb108844a44",
+      "md5": "45db8330ea4aabbf72f5199949ae03e5",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T03:30:35.069870+00:00"
+    },
+    {
+      "name": "spamassassin",
+      "url": "https://zenodo.org/records/8339691/files/SpamAssasin.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\SpamAssasin.csv",
+      "started_at": "2026-10-13T03:30:35.069870+00:00",
+      "status": "cached",
+      "bytes": 14879195,
+      "sha256": "3bfe8f8abff89f69a98456be50413c2fcb20a476141116dd84ee1507b980c00e",
+      "md5": "d921e0b2333bfaa058bd38193e6b3fbd",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T03:30:35.105098+00:00"
+    },
+    {
+      "name": "meajor_parquet",
+      "url": "https://zenodo.org/records/18471483/files/meajor_cleaned_preprocessed.parquet.gzip?download=1",
+      "record": "https://zenodo.org/records/18471483",
+      "path": "data\\raw\\meajor_cleaned_preprocessed.parquet.gzip",
+      "started_at": "2026-10-13T04:24:55.799912+00:00",
+      "status": "cached",
+      "bytes": 86278230,
+      "sha256": "5a9de6c207634f068928ed0cc68d78ee2fd594ed9a587daf4048974c95715c1a",
+      "md5": "78e397ad8447bcdba5a98097921ba8bd",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T04:24:56.050881+00:00",
+      "parse_check": "108685 rows, 20 columns"
+    },
+    {
+      "name": "ceas_08",
+      "url": "https://zenodo.org/records/8339691/files/CEAS_08.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\CEAS_08.csv",
+      "started_at": "2026-10-13T04:24:56.140204+00:00",
+      "status": "cached",
+      "bytes": 67902056,
+      "sha256": "22375e7d5f5a8229dbe987914ee9b3705656c590038662a7df6054629b376074",
+      "md5": "1f0d59191eec892a709995d48cd8decb",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T04:24:56.327150+00:00"
+    },
+    {
+      "name": "enron",
+      "url": "https://zenodo.org/records/8339691/files/Enron.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\Enron.csv",
+      "started_at": "2026-10-13T04:24:56.328150+00:00",
+      "status": "cached",
+      "bytes": 44837129,
+      "sha256": "11f28a5bdd3603f1829681ab6b55071b5f9af781b4e6694e39216b2996a96883",
+      "md5": "10489e0fdcc8af6fe62135c689367d40",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T04:24:56.441874+00:00"
+    },
+    {
+      "name": "nazario",
+      "url": "https://zenodo.org/records/8339691/files/Nazario.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\Nazario.csv",
+      "started_at": "2026-10-13T04:24:56.441874+00:00",
+      "status": "cached",
+      "bytes": 7811841,
+      "sha256": "b8fbc4158fbdfaff1ed98584c43d72e283c6352d7ade4d457d34c1d79488d184",
+      "md5": "4022d055bb7cf8602f30f768f652e91e",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T04:24:56.465423+00:00"
+    },
+    {
+      "name": "nazario_5",
+      "url": "https://zenodo.org/records/8339691/files/Nazario_5.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\Nazario_5.csv",
+      "started_at": "2026-10-13T04:24:56.465423+00:00",
+      "status": "cached",
+      "bytes": 11755517,
+      "sha256": "afef69828165619ced6661ca14a95444a1db82c7b25ae9c2619bbbb108844a44",
+      "md5": "45db8330ea4aabbf72f5199949ae03e5",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T04:24:56.507048+00:00"
+    },
+    {
+      "name": "spamassassin",
+      "url": "https://zenodo.org/records/8339691/files/SpamAssasin.csv?download=1",
+      "record": "https://zenodo.org/records/8339691",
+      "path": "data\\raw\\SpamAssasin.csv",
+      "started_at": "2026-10-13T04:24:56.507048+00:00",
+      "status": "cached",
+      "bytes": 14879195,
+      "sha256": "3bfe8f8abff89f69a98456be50413c2fcb20a476141116dd84ee1507b980c00e",
+      "md5": "d921e0b2333bfaa058bd38193e6b3fbd",
+      "md5_verified": true,
+      "finished_at": "2026-10-13T04:24:56.551950+00:00"
+    }
+  ],
+  "meajor_format": "parquet",
+  "meajor": {
+    "rows": 108685,
+    "columns": {
+      "sender": "str",
+      "sender_domain": "str",
+      "receiver": "str",
+      "receiver_domain": "str",
+      "date": "str",
+      "subject": "str",
+      "content_types": "str",
+      "body": "str",
+      "urls": "str",
+      "url_count": "float64",
+      "url_length_max": "float64",
+      "url_length_avg": "float64",
+      "url_subdom_max": "float64",
+      "url_subdom_avg": "float64",
+      "attachment_count": "float64",
+      "has_attachments": "bool",
+      "attachment_types": "str",
+      "language": "str",
+      "source": "str",
+      "label": "float64"
+    },
+    "missing_fraction": {
+      "sender": 0.0,
+      "sender_domain": 0.0045,
+      "receiver": 0.0,
+      "receiver_domain": 0.0218,
+      "date": 0.0,
+      "subject": 0.0134,
+      "content_types": 0.0,
+      "body": 0.0,
+      "urls": 0.4107,
+      "url_count": 0.0,
+      "url_length_max": 0.0,
+      "url_length_avg": 0.0,
+      "url_subdom_max": 0.0,
+      "url_subdom_avg": 0.0,
+      "attachment_count": 0.0,
+      "has_attachments": 0.0,
+      "attachment_types": 0.9847,
+      "language": 0.0,
+      "source": 0.0,
+      "label": 0.0
+    },
+    "label_counts": {
+      "0.0": 60650,
+      "1.0": 48034,
+      "nan": 1
+    },
+    "body_length": {
+      "count": 108684.0,
+      "mean": 1168.1,
+      "std": 1141.7,
+      "min": 1.0,
+      "25%": 380.0,
+      "50%": 797.0,
+      "75%": 1533.0,
+      "max": 30574.0
+    },
+    "source_counts": {
+      "trec5": 49583,
+      "trec7": 44096,
+      "trec6": 15005,
+      "nan": 1
+    },
+    "label_by_source": {
+      "trec5|0.0": 29929,
+      "trec5|1.0": 19654,
+      "trec6|0.0": 11208,
+      "trec6|1.0": 3797,
+      "trec7|0.0": 19513,
+      "trec7|1.0": 24583,
+      "nan|nan": 1
+    },
+    "language_top": {
+      "en": 82175,
+      "en;en": 21250,
+      "ru": 827,
+      "ja": 602,
+      "de": 383,
+      "es": 332,
+      "zh": 315,
+      "fr": 303,
+      "tr;en": 284,
+      "en;en;en": 218
+    },
+    "license": "CC-BY-4.0 (Zenodo API metadata, record 18471483)",
+    "label_semantics": "0 = benign, 1 = phishing per Zenodo record. Observed: every row has source in {trec5, trec6, trec7}; no Nazario / Nigerian Fraud rows are present in this file, so label 1 corresponds to the original TREC 'spam' label (malicious/unsolicited).",
+    "anonymisation": "entity placeholders such as [NAME], [ORGANIZATION], <|URL|> (see text_prep.py for handling)",
+    "dropped_invalid_label_or_empty_body": 2
+  },
+  "supplementary": {
+    "nazario_5": {
+      "rows": 3065,
+      "columns": {
+        "sender": "str",
+        "receiver": "str",
+        "date": "str",
+        "subject": "str",
+        "body": "str",
+        "label": "int64",
+        "urls": "str"
+      },
+      "missing_fraction": {
+        "sender": 0.0007,
+        "receiver": 0.0369,
+        "date": 0.001,
+        "subject": 0.0163,
+        "body": 0.0,
+        "label": 0.0,
+        "urls": 0.0
+      },
+      "label_counts": {
+        "1": 1565,
+        "0": 1500
+      },
+      "body_length": {
+        "count": 3065.0,
+        "mean": 3545.3,
+        "std": 85150.4,
+        "min": 1.0,
+        "25%": 451.0,
+        "50%": 865.0,
+        "75%": 1630.0,
+        "max": 4599644.0
+      },
+      "role": "train_candidate",
+      "label_semantics": "1 = phishing (Nazario corpus), 0 = legitimate",
+      "license": "CC-BY-4.0 (Zenodo record 8339691; cite Champa et al. 2024)"
+    },
+    "nazario": {
+      "rows": 1565,
+      "columns": {
+        "sender": "str",
+        "receiver": "str",
+        "date": "str",
+        "subject": "str",
+        "body": "str",
+        "urls": "int64",
+        "label": "int64"
+      },
+      "missing_fraction": {
+        "sender": 0.0,
+        "receiver": 0.0613,
+        "date": 0.0006,
+        "subject": 0.0026,
+        "body": 0.0,
+        "urls": 0.0,
+        "label": 0.0
+      },
+      "label_counts": {
+        "1": 1565
+      },
+      "body_length": {
+        "count": 1565.0,
+        "mean": 4730.0,
+        "std": 119080.5,
+        "min": 1.0,
+        "25%": 393.0,
+        "50%": 720.0,
+        "75%": 1260.0,
+        "max": 4599644.0
+      },
+      "role": "overlap_check",
+      "label_semantics": "1 = phishing (Nazario corpus), all rows positive",
+      "license": "CC-BY-4.0 (Zenodo record 8339691; cite Champa et al. 2024)"
+    },
+    "ceas_08": {
+      "rows": 39154,
+      "columns": {
+        "sender": "str",
+        "receiver": "str",
+        "date": "str",
+        "subject": "str",
+        "body": "str",
+        "label": "int64",
+        "urls": "int64"
+      },
+      "missing_fraction": {
+        "sender": 0.0,
+        "receiver": 0.0118,
+        "date": 0.0,
+        "subject": 0.0007,
+        "body": 0.0,
+        "label": 0.0,
+        "urls": 0.0
+      },
+      "label_counts": {
+        "1": 21842,
+        "0": 17312
+      },
+      "body_length": {
+        "count": 39154.0,
+        "mean": 1571.1,
+        "std": 3615.8,
+        "min": 14.0,
+        "25%": 224.0,
+        "50%": 570.0,
+        "75%": 1643.0,
+        "max": 143996.0
+      },
+      "role": "profile_only",
+      "label_semantics": "1 = spam, 0 = ham (CEAS 2008 spam challenge) - spam is not phishing",
+      "license": "CC-BY-4.0 (Zenodo record 8339691; cite Champa et al. 2024)"
+    },
+    "enron": {
+      "rows": 29767,
+      "columns": {
+        "subject": "str",
+        "body": "str",
+        "label": "int64"
+      },
+      "missing_fraction": {
+        "subject": 0.0067,
+        "body": 0.0,
+        "label": 0.0
+      },
+      "label_counts": {
+        "0": 15791,
+        "1": 13976
+      },
+      "body_length": {
+        "count": 29767.0,
+        "mean": 1464.6,
+        "std": 4166.0,
+        "min": 1.0,
+        "25%": 325.0,
+        "50%": 694.0,
+        "75%": 1539.5,
+        "max": 228353.0
+      },
+      "role": "profile_only",
+      "label_semantics": "1 = spam, 0 = ham (Enron-Spam) - spam is not phishing; overlaps TREC-05 sources",
+      "license": "CC-BY-4.0 (Zenodo record 8339691; cite Champa et al. 2024)"
+    },
+    "spamassassin": {
+      "rows": 5809,
+      "columns": {
+        "sender": "str",
+        "receiver": "str",
+        "date": "str",
+        "subject": "str",
+        "body": "str",
+        "label": "int64",
+        "urls": "int64"
+      },
+      "missing_fraction": {
+        "sender": 0.0,
+        "receiver": 0.0362,
+        "date": 0.0,
+        "subject": 0.0028,
+        "body": 0.0002,
+        "label": 0.0,
+        "urls": 0.0
+      },
+      "label_counts": {
+        "0": 4091,
+        "1": 1718
+      },
+      "body_length": {
+        "count": 5808.0,
+        "mean": 2406.9,
+        "std": 7883.7,
+        "min": 2.0,
+        "25%": 608.8,
+        "50%": 1084.0,
+        "75%": 2028.0,
+        "max": 299201.0
+      },
+      "role": "external_test",
+      "label_semantics": "1 = spam, 0 = ham (SpamAssassin public corpus) - spam is not phishing",
+      "license": "CC-BY-4.0 (Zenodo record 8339691; cite Champa et al. 2024)"
+    }
+  },
+  "cross_dataset_overlap": {
+    "nazario_5": {
+      "rows": 3065,
+      "exact_overlap_with_meajor": 41
+    },
+    "nazario": {
+      "rows": 1565,
+      "exact_overlap_with_meajor": 0,
+      "exact_overlap_with_nazario_5": 1565
+    },
+    "ceas_08": {
+      "rows": 39154,
+      "exact_overlap_with_meajor": 2
+    },
+    "enron": {
+      "rows": 29767,
+      "exact_overlap_with_meajor": 80
+    },
+    "spamassassin": {
+      "rows": 5808,
+      "exact_overlap_with_meajor": 1
+    }
+  },
+  "deduplication": {
+    "exact_duplicate_rows": 5032,
+    "near_duplicate_unions": 7643,
+    "lsh_candidate_pairs_checked": 116700,
+    "jaccard_threshold": 0.8,
+    "minhash_permutations": 64,
+    "lsh_bands": 16,
+    "shingle_words": 5,
+    "label_conflict_groups": 12,
+    "label_conflict_rows_dropped": 20,
+    "rows_before_collapse": 111712,
+    "rows_after_collapse": 99057
+  },
+  "splits": {
+    "meajor|test|0": 8204,
+    "meajor|test|1": 6236,
+    "meajor|train|0": 38284,
+    "meajor|train|1": 29101,
+    "meajor|val|0": 8204,
+    "meajor|val|1": 6237,
+    "nazario_5|test|0": 203,
+    "nazario_5|test|1": 216,
+    "nazario_5|train|0": 946,
+    "nazario_5|train|1": 1008,
+    "nazario_5|val|0": 203,
+    "nazario_5|val|1": 215
+  },
+  "external_test": {
+    "dataset": "spamassassin",
+    "rows_after_overlap_removal": 5538,
+    "labels": {
+      "0": 3851,
+      "1": 1687
+    },
+    "note": "spam/ham labels; used to measure benign false-positive rate and spam detection on an unseen corpus, not phishing recall"
+  }
+}
